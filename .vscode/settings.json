@@ -4,5 +4,17 @@
   "eslint.validate": ["javascript"],
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
+  "jestrunner.jestCommand": "npm run test --",
+  "jestrunner.debugOptions": {
+    "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
+    "runtimeArgs": [
+      "test",
+      "${fileBasename}",
+      "--runInBand",
+      "--no-cache",
+      "--watchAll=false",
+      "--color"
+    ]
+  }
 }
