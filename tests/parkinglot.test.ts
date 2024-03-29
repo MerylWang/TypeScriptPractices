@@ -33,7 +33,7 @@ describe('Parking a car', () => {
     expect(parkingLot.parkCar(2)).toBe(false);
   });
 
-  it.only('should return true if there are available spots', () => {
+  it('should return true if there are available spots', () => {
     const parkingLot = new ParkingLot({ Small: 10, Medium: 20, Large: 30 });
     expect(parkingLot.parkCar(Size.Small)).toBe(true);
     // expect(parkingLot.parkCar(1)).toBe(true);

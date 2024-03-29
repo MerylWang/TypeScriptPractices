@@ -16,5 +16,6 @@
       "--watchAll=false",
       "--color"
     ]
-  }
+  },
+  "window.autoDetectColorScheme": true
 }
